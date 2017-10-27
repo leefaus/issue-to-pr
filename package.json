@@ -1,0 +1,25 @@
+{
+  "name": "is-2-pr",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Lee Faus <leefaus@github.com> (is2pr.github.io)",
+  "license": "ISC",
+  "repository": "https://github.com/leefaus/is-2-pr.git",
+  "scripts": {
+    "start": "probot run ./index.js",
+    "test": "mocha && standard"
+  },
+  "dependencies": {
+    "probot": "^2.0.0"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "localtunnel": "^1.8.2",
+    "mocha": "^3.2.0",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 7.7.0",
+    "npm": ">= 4.0.0"
+  }
+}
