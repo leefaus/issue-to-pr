@@ -15,7 +15,7 @@ module.exports = (robot) => {
     robot.log(context.payload.commits[0].message);
     let message = context.payload.commits[0].message.match(re);
     let issue_no = 0;
-    if ((message !== null) && (message[0].startsWith("converts"))) {
+    if ((message !== null) && (message[0].toLowerCase().startsWith("converts"))) {
       robot.log("message WAS NOT null")
       robot.log(message[0].substring(message[0].indexOf("#") + 1))
       return context.github.pullRequests.createFromIssue({
